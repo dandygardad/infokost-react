@@ -18,11 +18,14 @@ export const search = css`
     input {
         border-radius: 4px;
         width: 75%;
-        padding: 5px 0;
+        padding: 6px 0;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.05em;
         border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    };
+    button {
+
     }
 `
