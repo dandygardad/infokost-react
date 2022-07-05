@@ -24,8 +24,25 @@ export const search = css`
         letter-spacing: 0.05em;
         border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        &:focus {
+            outline: none;
+            &::placeholder {
+                opacity: 0;
+            }
+        }
     };
     button {
-
+        border-radius: 4px;
+        border: 0;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 6px 22px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        &:hover {
+            background-color: #0d6efd;
+            color: #fafafa;
+            transition: all 0.2s ease;
+        }
     }
 `

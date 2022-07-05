@@ -10,8 +10,8 @@ const Banner = () => {
                 <img css={style.logo} src={require('../../assets/img/infokos_final.png')} alt="InfoKos Logo" />
             </Link>
             <form css={style.search}>
-                <input type="text" name='search' placeholder='Cari disini' />
-                <button>Search</button>
+                <input type="text" name='search' placeholder='Cari kost impian anda disini' />
+                <button>Cari</button>
             </form>
         </div>
     )
