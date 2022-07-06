@@ -7,16 +7,20 @@ const MapsKost = () => {
     return(
         <div css={style.container}>
             <h1 css={style.title}>Semua Kost Romang Lompoa</h1>
-            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} id="mapid">
+            <MapContainer center={[-5.223756088080829, 119.50632867393728]} zoom={14} scrollWheelZoom={true} id="mapid">
+                
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]}>
+
+                {/* This could be used for loop data from API */}
+                <Marker position={[-5.226498506297373, 119.50288189865357]}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                        <a href="https://goo.gl/maps/54kMkUHbggwPDQu47" rel='noreferrer' target="_blank"><b>Kost Ernias</b></a>
                     </Popup>
                 </Marker>
+
             </MapContainer>
         </div>
     )
