@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 /** @jsxImportSource @emotion/react */
 import { Global } from '@emotion/react'
 
@@ -6,9 +7,8 @@ import Home from './pages/Home'
 import Kost from './pages/Kost'
 import Admin from './pages/Admin'
 
-import * as style from './App.style'
-
 import Error404 from './pages/error/Error404'
+import * as style from './App.style'
 
 function App() {
   return (
