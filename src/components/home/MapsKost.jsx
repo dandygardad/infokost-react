@@ -2,11 +2,12 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 /** @jsxImportSource @emotion/react */
 import * as style from './MapsKost.style'
+import * as global from '../GlobalComp.style'
 
 const MapsKost = () => {
     return(
-        <div css={style.container}>
-            <h1 css={style.title}>Semua Kost Romang Lompoa</h1>
+        <div css={[global.container, style.container]}>
+            <h1 css={global.title}>Semua Kost Romang Lompoa</h1>
             <MapContainer center={[-5.223756088080829, 119.50632867393728]} zoom={14} scrollWheelZoom={true} id="mapid">
                 
                 <TileLayer
