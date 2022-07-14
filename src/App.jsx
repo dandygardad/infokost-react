@@ -1,16 +1,25 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
+import { Global } from '@emotion/react'
+
+import Home from './pages/Home'
+import Kost from './pages/Kost'
+import Admin from './pages/Admin'
+
+import Error404 from './pages/error/Error404'
+import * as style from './App.style'
 
 function App() {
-  const preflight = css`
-    margin: 0;
-    padding: 0;
-    background-color: red;
-  `
   return (
-    <div css={preflight}>
-      hello
-    </div>
+    <BrowserRouter>
+      <Global styles={style.global} />
+      <Routes>
+        <Route path="*" element={<Error404 />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/kost/:id" element={<Kost />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
