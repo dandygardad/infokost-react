@@ -14,7 +14,7 @@ export const cardImage = css`
 export const containerCard = css`
 display: flex;
 flex-direction: column;
-gap: 12px;
+gap: 14px;
 padding: 10px 5px;
     h4 {
         font-weight: 700;
@@ -41,5 +41,21 @@ padding: 10px 5px;
         cursor: pointer;
         float: right;
         text-decoration: none;
+    }
+    @media screen and (min-width: 425px){
+        h4 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        h4 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
     }
 `

@@ -17,7 +17,7 @@ export const search = css`
     align-items: center;
     input {
         border-radius: 4px;
-        width: 75%;
+        width: 250px;
         padding: 6px 0;
         text-align: center;
         font-size: 16px;
@@ -43,6 +43,16 @@ export const search = css`
             background-color: #0d6efd;
             color: #fafafa;
             transition: all 0.2s ease;
+        }
+    }
+    @media screen and (min-width: 425px){
+        input {
+            width: 300px;
+        }
+    }
+    @media screen and (min-width: 768px){
+        input {
+            width: 350px;
         }
     }
 `

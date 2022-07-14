@@ -5,7 +5,7 @@ import FlatCard from '../global/FlatCard'
 
 const FlatList = () => {
     return(
-        <div css={global.container}>
+        <div css={[global.container, style.container]}>
             <h1 css={global.title}>Flat List</h1>
             {/* For loop here to show all kost */}
             <div css={style.containerCards}>
