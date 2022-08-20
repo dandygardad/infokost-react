@@ -15,7 +15,7 @@ const Contact = () => {
                 <p>No. Telepon:</p>
                 <a href="tel:08124212121212">081242121212</a>
             </div>
-            <MapContainer center={[-5.223756088080829, 119.50632867393728]} zoom={14} scrollWheelZoom={true} id="mapid">
+            <MapContainer center={[-5.223756088080829, 119.50632867393728]} zoom={14} scrollWheelZoom={false} id="mapid">
                 
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

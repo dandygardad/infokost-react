@@ -5,6 +5,7 @@ import Footer from '../components/global/Footer'
 import Contact from '../components/kost/Contact'
 
 const Kost = () => {
+    document.title = "Kost Ernias - InfoKost Romang Lompoa"
     return(
         <>
             <Banner />

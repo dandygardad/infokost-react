@@ -8,7 +8,7 @@ const MapsKost = () => {
     return(
         <div css={[global.container, style.container]}>
             <h1 css={global.title}>Semua Kost Romang Lompoa</h1>
-            <MapContainer center={[-5.223756088080829, 119.50632867393728]} zoom={14} scrollWheelZoom={true} id="mapid">
+            <MapContainer center={[-5.223756088080829, 119.50632867393728]} zoom={15} scrollWheelZoom={false} id="mapid">
                 
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
