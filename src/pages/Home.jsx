@@ -4,6 +4,7 @@ import FlatList from '../components/home/FlatList'
 import Footer from '../components/global/Footer'
 
 const Home = () => {
+    document.title = 'InfoKost Romang Lompoa'
     return(
         <>
             <Banner />

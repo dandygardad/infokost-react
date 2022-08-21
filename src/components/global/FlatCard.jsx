@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { HashLink as Link } from "react-router-hash-link"
 
 /** @jsxImportSource @emotion/react */
 import * as style from './FlatCard.style'
@@ -11,7 +11,7 @@ const FlatCard = (props) => {
                 <h4>{props.name}</h4>
                 <p>{props.desc}</p>
                 <div>
-                    <Link to={"/kost/" + props.slug}>More</Link>
+                    <Link to={"/kost/" + props.slug +'#start'}>More</Link>
                 </div>
             </div>
         </div>

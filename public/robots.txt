@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+# A secret museum that connects the precious future.
+# https://www.youtube.com/watch?v=s8_vqfjYpBg
+
 User-agent: *
-Disallow:
+Disallow: /admin

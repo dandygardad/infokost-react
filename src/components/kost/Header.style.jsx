@@ -1,4 +1,5 @@
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
+
 export const container = css`
     padding: 28px 10px !important;
     display: flex;
@@ -25,5 +26,20 @@ export const container = css`
         img {
             width: 700px;
         }
+    }
+`
+const fadeIn = keyframes`
+ 0% {
+    opacity: 0;
+ }
+ 100%{
+    opacity: 1;
+ }
+`
+
+export const imageAnim = css`
+    cursor: pointer;
+    img {
+        animation: ${fadeIn} 1s ease forwards;
     }
 `
