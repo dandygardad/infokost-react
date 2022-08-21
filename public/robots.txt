@@ -2,4 +2,4 @@
 # https://www.youtube.com/watch?v=s8_vqfjYpBg
 
 User-agent: *
-Disallow:
+Disallow: /admin

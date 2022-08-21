@@ -8,7 +8,7 @@ const Admin = () => {
     const [isLogged, setIsLogged] = useState(false)
     
     return(
-        <div css={{ backgroundColor: "#f0f0f0", height: "100vh" }}>
+        <div css={{ backgroundColor: "#f0f0f0", minHeight: "100vh" }}>
         {isLogged ? <Logged isLogged={setIsLogged} /> : <Login isLogged={setIsLogged} />}
         </div>
     )

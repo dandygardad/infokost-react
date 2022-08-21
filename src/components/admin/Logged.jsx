@@ -14,7 +14,7 @@ const Logged = (props) => {
     return(
         <div css={{ maxWidth: "1024px", margin: "0 auto" }}>
             <Navbar logoutButton={logoutButton}/>
-            <div>
+            <div css={{ padding: "20px 15px", fontFamily: "'Montserrat', sans-serif" }}>
                 <Outlet />
             </div>
         </div>
