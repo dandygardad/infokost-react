@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react'
 import * as global from '../GlobalComp.style'
 import * as style from './Header.style'
 
-const Header = () => {
-    const images = ["dummy.png", "dummy1.png", "dummy2.png"]
+const Header = (props) => {
+    const images = [props.img1, props.img2, props.img3, props.img4]
     const [imgPos, setImgPos] = useState(0)
     
     useEffect(() => {
@@ -19,10 +19,10 @@ const Header = () => {
 
     return(
         <div css={[global.container, style.container]}>
-            <h2 id='start'>Boarding House</h2>
-            <h4>Rp5.200.000 - Rp7.000.000 / Tahun</h4>
+            <h2 id='start'>{props.name}</h2>
             <div onClick={changePicture} css={style.imageAnim}>
-                <img src={require("../../assets/img/" + images[imgPos])} alt="Boarding House" />
+                <img src={images[imgPos]} alt={props.name} />
+                {/* <img src={require("../../assets/img/" + images[imgPos])} alt="Boarding House" /> */}
             </div>
         </div>
     )

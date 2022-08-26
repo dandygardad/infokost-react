@@ -20,3 +20,19 @@ export const container = css`
     flex-direction: column;
     row-gap: 12px;
 `
+
+export const load = css`
+    width: 130px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    background: #0067D5;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+`

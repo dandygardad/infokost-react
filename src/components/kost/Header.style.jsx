@@ -8,6 +8,7 @@ export const container = css`
     align-items: center;
     h2 {
         font-size: 24px;
+        padding-bottom: 12px;
         font-weight: 700;
     }
     h4 {
