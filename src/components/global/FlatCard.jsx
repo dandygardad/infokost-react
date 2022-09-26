@@ -5,7 +5,7 @@ import * as style from './FlatCard.style'
 
 const FlatCard = (props) => {
     return(
-        <div css={style.container}>
+        <div role="listitem" css={style.container}>
             <img src={props.image} alt={"Gambar dari " + props.name} css={style.cardImage} />
             {/* <img src={require('../../assets/img/' + props.image)} alt={"Gambar dari " + props.name} css={style.cardImage} /> */}
             <div css={style.containerCard}>

@@ -16,21 +16,21 @@ import * as style from './App.style'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Global styles={style.global} />
-      <Routes>
-        <Route path="*" element={<Error404 />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/kost/:id" element={<Kost />} />
-        <Route path="/admin" element={<Admin />}>
-          <Route index element={<DataKost/>} />
-          <Route path="kost" element={<DataKost/>} />
-          <Route path="input" element={<InputKost/>} />
-          <Route path="edit/:id" element={<InputKost/>} />
-          <Route path="change-password" element={<ChangePassword/>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+    <Global styles={style.global} />
+    <Routes>
+      <Route path="*" element={<Error404 />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/kost/:id" element={<Kost />} />
+      <Route path="/admin" element={<Admin />}>
+        <Route index element={<DataKost/>} />
+        <Route path="kost" element={<DataKost/>} />
+        <Route path="input" element={<InputKost/>} />
+        <Route path="edit/:id" element={<InputKost/>} />
+        <Route path="change-password" element={<ChangePassword/>} />
+      </Route>
+    </Routes>
+    </>
   );
 }
 
