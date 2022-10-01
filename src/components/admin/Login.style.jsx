@@ -56,6 +56,12 @@ export const container = css`
             }
         }
     }
+
+    .loading {
+        color: white;
+        margin: 5px auto;
+        font-weight: 600;
+    }
 `
 
 export const wrongStyle = css`

@@ -11,3 +11,7 @@ export const table = css`
         cursor: pointer;
     }
 `
+
+export const loading = css`
+    text-align: center;
+`

@@ -45,6 +45,14 @@ export const form = css`
     }
 `
 
+export const loading = css`
+    p {
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+`
+
 export const inputForm = css`
     display: flex;
     gap: 12px;

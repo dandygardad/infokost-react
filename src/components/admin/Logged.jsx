@@ -8,6 +8,7 @@ const Logged = (props) => {
     const viewport = document.querySelector("meta[name=viewport]")
     viewport.setAttribute('content', 'width=1024')
     const logoutButton = () => {
+        localStorage.removeItem('token')
         props.isLogged(false)
     }
     
