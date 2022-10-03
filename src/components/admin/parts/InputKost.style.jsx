@@ -43,6 +43,10 @@ export const form = css`
         resize: none;
         padding: 10px;
     }
+
+    p {
+        text-align: center;
+    }
 `
 
 export const inputForm = css`
