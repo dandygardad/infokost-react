@@ -27,7 +27,8 @@ const DataKost = () => {
                             aksi: <>
                                 <div css={style.table}>
                                     <Link to={`/kost/${item.slug}#start`}>Lihat</Link>
-                                    <Link to={`/admin/edit/${item.slug}`}>Edit</Link>
+                                    {/* <Link to={`/admin/edit/${item.slug}`}>Edit</Link> */}
+                                    <Link to={`/admin/delete/${item.slug}`}>Hapus</Link>
                                 </div>
                             </>
                         }

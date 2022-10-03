@@ -10,6 +10,7 @@ import Admin from './pages/Admin'
 import DataKost from './components/admin/parts/DataKost'
 import InputKost from './components/admin/parts/InputKost'
 import ChangePassword from './components/admin/parts/Password'
+import DeleteKost from './components/admin/parts/DeleteKost'
 
 import Error404 from './pages/error/Error404'
 import * as style from './App.style'
@@ -26,7 +27,8 @@ function App() {
         <Route index element={<DataKost/>} />
         <Route path="kost" element={<DataKost/>} />
         <Route path="input" element={<InputKost/>} />
-        <Route path="edit/:id" element={<InputKost/>} />
+        {/* <Route path="edit/:id" element={<InputKost/>} /> */}
+        <Route path="delete/:slug" element={<DeleteKost />} />
         <Route path="change-password" element={<ChangePassword/>} />
       </Route>
     </Routes>

@@ -26,6 +26,10 @@ const InputKost = () => {
     const inputImage4 = useRef()
     const inputDesc = useRef()
 
+    if(id) {
+      fetch()  
+    }
+
     const checkInput = () => {
         setIsFilledForm(false)
         
