@@ -6,7 +6,7 @@ const DeleteKost = () => {
     const { slug } = useParams()
 
     useEffect(() => {
-        fetch('http://localhost:8000/adminmode/deletekost', {
+        fetch(`${process.env.REACT_APP_API_URL}/adminmode/deletekost`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

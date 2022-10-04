@@ -10,7 +10,7 @@ const DataKost = () => {
 
     useEffect(() => {
         if(localStorage.getItem('token')){
-            fetch('http://localhost:8000/adminmode/places', {
+            fetch(`${process.env.REACT_APP_API_URL}/adminmode/places`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

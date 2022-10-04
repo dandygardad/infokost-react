@@ -21,7 +21,7 @@ const Login = (props) => {
             return
         }
 
-        fetch('http://localhost:8000/adminmode/login', {
+        fetch(`${process.env.REACT_APP_API_URL}/adminmode/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

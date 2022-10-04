@@ -26,10 +26,6 @@ const InputKost = () => {
     const inputImage4 = useRef()
     const inputDesc = useRef()
 
-    if(id) {
-      fetch()  
-    }
-
     const checkInput = () => {
         setIsFilledForm(false)
         
@@ -66,7 +62,7 @@ const InputKost = () => {
         formData.append("lat", inputLat.current.value)
         formData.append("link_gmaps", inputGMaps.current.value)
         
-        fetch("http://localhost:8000/adminmode/createkost", {
+        fetch(`${process.env.REACT_APP_API_URL}/adminmode/createkost`, {
             method: "POST",
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem("token")}`

@@ -1,4 +1,4 @@
-# Infokos Romang Lompoa - React
+# InfoKost Romang Lompoa - React
 
 In the project directory, you can run:
 

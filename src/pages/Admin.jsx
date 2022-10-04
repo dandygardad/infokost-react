@@ -8,7 +8,7 @@ const Admin = () => {
     const [isLogged, setIsLogged] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:8000/adminmode/checkjwt' , {
+        fetch(`${process.env.REACT_APP_API_URL}/adminmode/checkjwt` , {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

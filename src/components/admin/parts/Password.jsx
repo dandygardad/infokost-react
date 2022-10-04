@@ -23,7 +23,7 @@ const Password = () => {
             return
         }
 
-        fetch('http://localhost:8000/adminmode/changepassword', {
+        fetch(`${process.env.REACT_APP_API_URL}/adminmode/changepassword`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
