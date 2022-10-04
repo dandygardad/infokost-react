@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react'
 import * as global from '../GlobalComp.style'
 import * as style from './Header.style'
 
+const urlPicture = `${process.env.REACT_APP_API_URL}/uploads/`
+
 const Header = (props) => {
-    const images = [props.img1, props.img2, props.img3, props.img4]
+    const images = [urlPicture.concat(props.img1), props.img2, props.img3, props.img4]
     const [imgPos, setImgPos] = useState(0)
     
     useEffect(() => {
