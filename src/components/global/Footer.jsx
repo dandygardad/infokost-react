@@ -14,7 +14,7 @@ const Footer = () => {
                         </tr>
                         <tr>
                             <td>No. Telp</td>
-                            <td><a href="tel:081234567788">0812345678899</a></td>
+                            <td><a href="tel:081355905756">081355905756</a></td>
                         </tr>
 
                     </tbody>
