@@ -24,7 +24,7 @@ const FlatList = () => {
 
     const handleLoad = () => {
         setIsLoading(true)
-        setCurrentPage((prevState) => prevState + 10)
+        setCurrentPage((prevState) => parseInt(prevState) + 10)
     }
     
     return(
